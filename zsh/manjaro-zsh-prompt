@@ -1,8 +1,8 @@
 () {
   emulate -L zsh
 
-  source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
-  source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+  source ${PWD}/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
+  source ${PWD}/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
   # Determine terminal capabilities.
   {
