@@ -21,8 +21,6 @@ alias rd=rmdir
 if [[ "$SHELL" = *"zsh"* ]]; then
   alias which-command=whence
   alias history=omz_history
-else
-	alias which='alias | /usr/bin/which --tty-only --read-alias --show-tilde --show-dot'
 fi
 alias run-help=man
 
