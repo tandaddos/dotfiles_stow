@@ -151,7 +151,7 @@ else
 fi
 alias zz='z -'  # go back
 
-# bat
+#eval bat
 alias show_bat_themes='bat --list-themes | fzf --preview="bat --theme={} --color=always ~/.profile"'
 export BAT_THEME="Sublime Snazzy"
 
