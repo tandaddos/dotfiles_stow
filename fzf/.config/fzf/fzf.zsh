@@ -1,5 +1,5 @@
 if [[ "$SHELL" = *"zsh"* ]]; then
-	source < "$(fzf --zsh)"
+	source <(fzf --zsh)
 else
 	eval "$(fzf --bash)"
 fi
