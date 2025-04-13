@@ -37,8 +37,8 @@ opt.undofile = true -- store undos between sessions
 opt.splitright = true
 opt.splitbelow = true
 
-opt.cursorline = true   -- show line under cursor``
-opt.cursorcolumn = true -- show column
+opt.cursorline = true -- show line under cursor``
+-- opt.cursorcolumn = true -- show column
 opt.breakindent = true
 
 opt.backspace = "indent,eol,start"  -- allow backspace in these cases
@@ -51,15 +51,16 @@ opt.fileencoding = "utf-8" -- The encoding written to file
 opt.ruler = true           -- Show the cursor position all the time
 
 -- how whitespaces are displayed
-opt.list = true
+opt.list = false
 opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
 
 opt.inccommand = "split" -- preview substitutions live, as you type
+opt.scrolloff = 10       -- number of lines to keep above and below cursor
 opt.cmdheight = 0        -- disable commandline till needed
 
 -- misc
 opt.iskeyword:append("-") -- treat dash separated words as a word text object--
-opt.mouse = "nr"          -- Enable your mouse
+opt.mouse = "nvica"       -- Enable your mouse e.g. nvichar
 opt.updatetime = 300      -- Faster completion
 opt.timeoutlen = 500      -- By default timeoutlen is 1000 ms
 
