@@ -22,7 +22,7 @@ keymap.set({ "n", "v" }, "<leader>fmt", function()
 end, { desc = "prettify" })
 
 keymap.set({ "n", "v" }, "<leader><", "<gv", { desc = "Format to left" })  -- split window vertically
-keymap.set({ "n", "v" }, "<leader>>", "<gv", { desc = "Format to right" }) -- split window vertically
+keymap.set({ "n", "v" }, "<leader>>", ">gv", { desc = "Format to right" }) -- split window vertically
 
 -- window management
 keymap.set("n", "<Up>", "<Nop>", { desc = "Noop Up" })       -- Unused Up arrow

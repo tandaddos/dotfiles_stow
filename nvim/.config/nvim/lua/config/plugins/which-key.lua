@@ -11,6 +11,12 @@ return {
     -- refer to the configuration section below
     preset = "helix", -- classic | modern | helix
   },
+  icons = {
+    rules = false,
+    breadcrumb = " ", -- symbol used in the command line area that shows your active key combo
+    separator = "󱦰  ", -- symbol used between a key and it's label
+    group = "󰹍 ", -- symbol prepended to a group
+  },
   presets = {
     operators = true,  -- adds help for operators like d, y, ...
     motions = true,    -- adds help for motions

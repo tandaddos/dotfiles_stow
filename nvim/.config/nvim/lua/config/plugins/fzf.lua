@@ -3,6 +3,7 @@ return {
   dependencies = { "nvim-tree/nvim-web-devicons" },
   config = function()
     require("fzf-lua").setup({
+      "hide", -- the hide profile supports a more complete resume capability
       fzf_opts = { ["--wrap"] = true },
       fzf_colors = {
         ["pointer"] = { "fg", { "Red" } },

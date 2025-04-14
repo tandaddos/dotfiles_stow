@@ -110,56 +110,56 @@ return {
       local keymap = vim.keymap
       keymap.set(
         "n",
-        "<leader>fbi",
+        "<leader>Tbi",
         builtins.find_files,
         { noremap = true, silent = true, desc = "Telescope builtin find files" }
       )
       keymap.set(
         "n",
-        "<leader>ff",
+        "<leader>Tff",
         "<cmd>Telescope find_files<cr>",
         { noremap = true, silent = true, desc = "Telescope fuzzy find files in cwd" }
       )
       keymap.set(
         "n",
-        "<leader>fr",
+        "<leader>Tfr",
         "<cmd>Telescope oldfiles<cr>",
         { noremap = true, silent = true, desc = "Telescope fuzzy find recent files" }
       )
       keymap.set(
         "n",
-        "<leader>fl",
+        "<leader>Tfl",
         "<cmd>Telescope live_grep<cr>",
         { noremap = true, silent = true, desc = "Telescope livegrep string in cwd" }
       )
       keymap.set(
         "n",
-        "<leader>fg",
+        "<leader>Tfg",
         "<cmd>Telescope grep_string<cr>",
         { noremap = true, silent = true, desc = "Telescope grep string under cursor in cwd" }
       )
       keymap.set(
         "n",
-        "<leader>fbu",
+        "<leader>Tfbu",
         "<cmd>Telescope buffers<cr>",
         { noremap = true, silent = true, desc = "Telescope list buffers" }
       )
       keymap.set(
         "n",
-        "<leader>fh",
+        "<leader>Tfh",
         "<cmd>Telescope help_tags<cr>",
         { noremap = true, silent = true, desc = "Telescope list tags" }
       )
 
       -- search files in nvim config dir
-      keymap.set("n", "<leader>fc", function()
+      keymap.set("n", "<leader>Tfc", function()
         builtins.find_files({
           cwd = vim.fn.stdpath("config"),
         })
       end, { desc = "search nvim config" })
 
       -- search nvim packages files
-      keymap.set("n", "<leader>fp", function()
+      keymap.set("n", "<leader>Tfp", function()
         builtins.find_files({
           cwd = vim.fs.joinpath(vim.fn.stdpath("data"), "lazy"),
         })
@@ -178,7 +178,7 @@ return {
       --                            any „test“ path
       --  "foo" ../other-project	  foo, ../other-project	  search for „foo“
       --                                                    in ../other-project
-      keymap.set("n", "<leader>fml", function()
+      keymap.set("n", "<leader>Tfml", function()
         telescope.extensions.live_grep_args.live_grep_args()
       end, { desc = "Telescope livegrep with args" })
     end,
