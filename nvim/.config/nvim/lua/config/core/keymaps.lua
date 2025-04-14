@@ -10,14 +10,14 @@ keymap.set({ "n", "v" }, "<space>x", ":lua", { desc = "run lua command" })
 keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
 
 -- clear search higlights
-keymap.set("n", "<leader>mnh", ":nohl<CR>", { desc = "[m]isc [n]o sarch [h]ighlights" })
+keymap.set("n", "<leader>mnh", ":nohl<CR>", { desc = "[m]isc [n]o search [h]ighlights" })
 
 -- increment/decrement numbers
 keymap.set("n", "<leader>+", "<C-a>", { desc = "Increment number" }) -- increment
 keymap.set("n", "<leader>-", "<C-x>", { desc = "Decrement number" }) -- decrement
 
 -- make pretty format per lsp
-keymap.set({ "n", "v" }, "<leader>fmt", function()
+keymap.set({ "n", "v" }, "<leader>mp", function()
   vim.lsp.buf.format()
 end, { desc = "prettify" })
 
