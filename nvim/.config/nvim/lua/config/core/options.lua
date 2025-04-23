@@ -68,3 +68,6 @@ opt.timeoutlen = 500      -- By default timeoutlen is 1000 ms
 
 opt.autochdir = false -- Your working directory will always be the same as your working directory
 opt.title = true      -- title automatically
+
+-- tag files
+opt.tags.append("./tags,tags")
